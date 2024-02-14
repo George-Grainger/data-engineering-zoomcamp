@@ -1,6 +1,8 @@
 # Module 1 ignores
-1-docker-sql/yellow_tripdata_2021-01.csv
+1-docker-sql/output.csv
 1-docker-sql/ny_taxi_postgres_data
+1-docker-sql/commands.bash
 
 
 # Module 2 ignores
+commands.bash
