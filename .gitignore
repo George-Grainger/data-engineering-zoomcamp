@@ -1,0 +1,6 @@
+# Module 1 ignores
+1-docker-sql/yellow_tripdata_2021-01.csv
+1-docker-sql/ny_taxi_postgres_data
+
+
+# Module 2 ignores
