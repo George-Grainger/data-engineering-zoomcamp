@@ -6,3 +6,4 @@
 
 # Module 2 ignores
 commands.bash
+1-docker-sql/taxi_zone_lookup.csv
