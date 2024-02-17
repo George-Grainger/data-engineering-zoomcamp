@@ -8,13 +8,14 @@ terraform {
 }
 
 provider "google" {
-  project = "pivotal-purpose-414614"
-  region  = "europe-west2"
+  credentials = file(var.creds-path)
+  project = var.project
+  region  = var.region
 }
 
 resource "google_storage_bucket" "demo-bucket" {
-  name          = "pivotal-purpose-414614-terra-bucket"
-  location      = "EUROPE-WEST2"
+  name          = var.gcs_bucket_name
+  location      = var.location
   force_destroy = true
 
   lifecycle_rule {
@@ -25,4 +26,10 @@ resource "google_storage_bucket" "demo-bucket" {
       type = "AbortIncompleteMultipartUpload"
     }
   }
+}
+
+# From video 2
+resource "google_bigquery_dataset" "demo-dataset" {
+  dataset_id = var.bq_dataset_name
+  location   = var.location
 }
