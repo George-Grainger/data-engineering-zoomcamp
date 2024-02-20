@@ -1,10 +1,10 @@
 # ------------------
 #  Module 1 ignores
 # ------------------
-1-docker-sql/output.csv
-1-docker-sql/ny_taxi_postgres_data
-1-docker-sql/commands.bash
-1-docker-sql/taxi_zone_lookup.csv
+1-docker-terraform/docker/output.csv
+1-docker-terraform/docker/ny_taxi_postgres_data
+1-docker-terraform/docker/commands.bash
+1-docker-terraform/docker/taxi_zone_lookup.csv
 
 
 # ------------------
